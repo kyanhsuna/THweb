@@ -1,0 +1,47 @@
+/*Header chính*/
+header{
+    background-image: url('header.png');
+    height: 100px;
+}
+
+/*Logo*/
+#logo {
+    height: 36;
+}
+
+/*Header-img1*/
+.header-img1{
+    height: 100px;
+    top: -30px;
+    left: 80%;
+    animation: slide1 3s forwards;
+}
+
+/*Header-img2*/
+.header-img2{
+    height: 70px;
+    top: -5px;
+    left: 80%;
+    animation: slide2 3s forwards;
+}
+
+/*Header-img3*/
+.header-img3{
+    height: 80px;
+    top: 0px;
+}
+
+@keyframes slide1{
+    from { left: 80%;}
+    to { left: 30%; }
+}
+
+@keyframes slide2{
+    from { left: 80%;}
+    to { left: 45%;}
+}
+
+@keyframes slide3 {
+    from { left: 80%; }
+    to { left: 63%; }
+}
