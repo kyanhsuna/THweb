@@ -4,47 +4,70 @@
         <meta charset="UTF-8">
         <title>Trang chủ</title>
         <link href="images/favicon.ico" rel="shortcut icon" type="images/vnd.microsoft.icon">
-        <link rel="stylesheet" href="../TH_B2_Data/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
+            <!--Hình ảnh-->
             <a href="trangchu.html">
                 <img id="logo" src="images/logo.png">
-                <img class="header-img1" src="../TH_B2_Data/header-img1.png">
-                <img class="header-img2" src="../TH_B2_Data/header-img2.png">
-                <img class="header-img3" src="../TH_B2_Data/header-img3.png">
+                <img class="header-img1" src="images/header-img1.png">
+                <img class="header-img2" src="images/header-img2.png">
+                <img class="header-img3" src="images/header-img3.png">
             </a>
-        </header>
-        <nav>
-            <a href="trangchu.html">Trang chủ</a>
-            <a href="gioithieu.html">Giới thiệu</a>
-            <a href="sanpham.html">Sản phẩm</a>
-            <a href="tintuc.html">Tin tức</a>
-            <a href="dangnhap.html">Đăng nhập</a>
-            <a href="dangky.html">Đăng ký</a>
-            <a href="lienhe.html">Liên hệ</a> 
+            <!--Thẻ nav-->
+            <nav>
+                <div class="nav-menu">
+                    <a href="trangchu.html">Trang chủ</a>
+                    <a href="gioithieu.html">Giới thiệu</a>
+                    <a href="sanpham.html">Sản phẩm</a>
+                    <a href="tintuc.html">Tin tức</a>
+                    <a href="dangnhap.html">Đăng nhập</a>
+                    <a href="dangky.html">Đăng ký</a>
+                    <a href="lienhe.html">Liên hệ</a>
+                </div>
+            <div class="nav-search">
+                <input type="text" placeholder="Nhập nội dung cần tìm...">
+                <button class="btn-search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="btn-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
         </nav>
+        </header>
         <main>
-            <img src="images/trangchu/bg-home.jpg"></images>
-            <h1>Sản phẩm mới</h1>
-            <h2>Sữa chua tốt cho sức khỏe</h2>
-            <img src="images/trangchu/yogurt.jpg">
-            <p>Sữa chua là một loại thực phẩm được tạo ra từ quá trình lên men sữa của các vi khuẩn. Hầu hết các loại sữa đều có thể dùng làm sữa chua, tuy nhiên sữa bò là được dùng nhiều hơn hết. Sữa chua hay được gọi là yaourt (là da-ua). 
-                Chúng được lên men từ sữa động vật nhờ vi khuẩn lactic, đã được khử chất béo và thanh trùng ở nhiệt độ 80 - 90 độ C.Sữa chua có 2 loại cơ bản là sữa chua có đường và sữa chua không đường. Bên cạnh đó còn có loại sữa chua uống, 
-                sữa chua men sống. Váng sữa thường được chia làm 3 loại dựa vào hàm lượng chất béo có trong sản phẩm: váng sữa có hàm lượng chất béo cao nhất (35-50% chất béo), váng sữa thông thường (10-30% chất béo), váng sữa nguyên kem (6-15% chất béo).
-                Xem chi tiết
-            </p>
+            <img src="images/trangchu/bg-home.jpg">
+                <h1>Sản phẩm mới</h1>
+                <h2>Sữa chua tốt cho sức khỏe</h2>
+                <div class="loai1">
+                    <img src="images/trangchu/yogurt.jpg" class="media1">
+                    <p class="content">Sữa chua là một loại thực phẩm được tạo ra từ quá trình lên men sữa của các vi khuẩn. Hầu hết các loại sữa đều có thể dùng làm sữa chua, tuy nhiên sữa bò là được dùng nhiều hơn hết. Sữa chua hay được gọi là yaourt (là da-ua). 
+                    Chúng được lên men từ sữa động vật nhờ vi khuẩn lactic, đã được khử chất béo và thanh trùng ở nhiệt độ 80 - 90 độ C.Sữa chua có 2 loại cơ bản là sữa chua có đường và sữa chua không đường. Bên cạnh đó còn có loại sữa chua uống, 
+                    sữa chua men sống. Váng sữa thường được chia làm 3 loại dựa vào hàm lượng chất béo có trong sản phẩm: váng sữa có hàm lượng chất béo cao nhất (35-50% chất béo), váng sữa thông thường (10-30% chất béo), váng sữa nguyên kem (6-15% chất béo).
+                    Xem chi tiết
+                    <p>
+                </div>
+            
+            <article class="section type2">
+                <h1>Góc thành viên</h1>
+                <h2>Sữa chua nhà làm</h2>
+                <div class="loai2">
+                    <video src="images/trangchu/yogurt.mp4" class="media2"></video>
+                    <p class="content">Học làm sữa chua tại gia cùng chuyên gia.Trong thực đơn dinh dưỡng của các bà mẹ cho con trẻ và các thành viên trong gia đình đều không thể thiếu món sữa chua thơm ngon, hấp dẫn và cực kì tốt cho sức khỏe này. 
+                    Tuy nhiên, đa phần đều chọn mua sữa chua công nghiệp đã được đóng hộp bán sẵn tại các siêu thị và cửa hàng hơn là sữa chua tự làm tại nhà. Như vậy, liệu sữa chua nhà làm và sữa chua công nghiệp thì loại nào tốt
+                     sức khỏe của chúng ta hơn? Nếu là một người yêu thích nấu ăn bạn sẽ chọn sữa nhà làm hay mua sữa chua công nghiệp bên ngoài. Sữa chua nhà làm đảm bảo về độ an toàn, chất lượng cũng như giá thành rẻ.
+                     Xem chi tiết
+                    </p>
+                </div>
+            </article>
+            
+            
 
-            <h1>Góc thành viên</h1>
-            <h2>Sữa chua nhà làm</h2>
-            <video src="images/trangchu/yogurt.mp4"></video>
-            <p>Học làm sữa chua tại gia cùng chuyên gia.Trong thực đơn dinh dưỡng của các bà mẹ cho con trẻ và các thành viên trong gia đình đều không thể thiếu món sữa chua thơm ngon, hấp dẫn và cực kì tốt cho sức khỏe này. 
-                Tuy nhiên, đa phần đều chọn mua sữa chua công nghiệp đã được đóng hộp bán sẵn tại các siêu thị và cửa hàng hơn là sữa chua tự làm tại nhà. Như vậy, liệu sữa chua nhà làm và sữa chua công nghiệp thì loại nào tốt
-                 sức khỏe của chúng ta hơn? Nếu là một người yêu thích nấu ăn bạn sẽ chọn sữa nhà làm hay mua sữa chua công nghiệp bên ngoài. Sữa chua nhà làm đảm bảo về độ an toàn, chất lượng cũng như giá thành rẻ.
-                 Xem chi tiết
-            </p>
-
-            <h1>Hướng dẫn làm sữa chua không đường</h1>
+            <h2>Hướng dẫn làm sữa chua không đường</h2>
+            <div class="two-column">
             <h3>Nguyên liệu làm sữa chua không đường</h3>
             <ul>
                 <li>1 lít sữa tươi không đường</li>
@@ -61,19 +84,35 @@
                 <li>Sau khi ủ xong, bạn có thể dùng 1 hũ sữa chua vừa ủ để ăn thử, nếu thấy đạt vị sữa chua rồi có thể bảo quản trong ngăn mát tủ lạnh và thưởng thức dần nhé
                 </li>
             </ol>
+            </div>
 
+            <div class="noidungdathang">
             <h2>Đặt hàng ngay</h2>
-            <img src="images/trangchu/order_1.png"></br>Gọi điện</img></br>
-            <img src="images/trangchu/order_2.png"></br>Đặt hàng</img></br>
-            <img src="images/trangchu/order_3.png"></br>Nhận hàng</img></br>
-            <img src="images/trangchu/order_4.png"></br>Thanh toán</img>
+            </div>
+
+            <div class="hinhanhdathang">
+            <img src="images/trangchu/order_1.png">Gọi điện
+            </div>
+            <div class="hinhanhdathang">
+                <img src="images/trangchu/order_2.png">Đặt hàng
+            </div>
+            <div class="hinhanhdathang">
+                <img src="images/trangchu/order_3.png">Nhận hàng
+            </div>
+            <div class="hinhanhdathang">
+            <img src="images/trangchu/order_4.png">Thanh toán
+            </div>
         </main>
         <footer>
-            &copy; 2021 Bản quyền thuộc về FreezeVN. 
-            <a href="facebook.com">facebook</a>
-            <a href="twitter.com">twitter</a>
-            <a href="pinterest.com">pinterest</a>
-            <a href="#logo">Về đầu trang</a>
+            &copy; 2021 Bản quyền thuộc về FreezeVN.
+
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+            
+            <a href="#logo" alt="" class="back-to-top"></a>
         </footer>
     </body>
 
