@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                width: 1024px;
+                margin: auto;
+                display: grid;
+                grid-template-areas: "he" "na" "ma" "fo";
+            }
+            header {
+                grid-area: he;
+                background-color: yellow;
+            }
+            nav {
+                grid-area: na;
+                background-color: green;
+            }
+            main {
+                grid-area: ma;
+                display: grid;
+            }
+            footer {
+                grid-area: fo;
+                background-color: brown;
+            }
+
+
+
+            main.col1 {
+                grid-template-areas: 
+                "left" 
+                "center" 
+                "right";
+            }
+
+            main aside.aleft {
+                grid-area: left;
+            }
+
+            main article {
+                grid-area: center;
+            }
+
+            main aside.aright {
+                grid-area: right;
+            }
+
+            main.col2-left {
+                grid-template-areas: "left center center center";
+            }
+
+            main.col2-left aside.aright{
+                display: none;
+            }
+
+            main.col2-right {
+                grid-template-areas: "center center center right";
+            }
+
+            main.col2-right aside.aleft{
+                display: none;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            header
+        </header>
+        <main class="col2-right">
+            <aside class="aleft">
+                left
+            </aside>
+            <article>
+                art
+            </article>
+            <aside class="aright">
+                right
+            </aside>
+        </main>
+        <footer>
+            foot
+        </footer>
+    </body>
+    
+</html>

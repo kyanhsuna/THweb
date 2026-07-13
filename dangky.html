@@ -2,27 +2,42 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Đăng ký</title>
+        <title>Trang chủ</title>
         <link href="images/favicon.ico" rel="shortcut icon" type="images/vnd.microsoft.icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
+            <!--Hình ảnh-->
             <a href="trangchu.html">
                 <img id="logo" src="images/logo.png">
-                <img class="header-img1" src="TH_B2_Data/header-img1.png">
-                <img class="header-img2" src="TH_B2_Data/header-img2.png">
-                <img class="header-img3" src="TH_B2_Data/header-img3.png">
+                <img class="header-img1" src="images/header-img1.png">
+                <img class="header-img2" src="images/header-img2.png">
+                <img class="header-img3" src="images/header-img3.png">
             </a>
-        </header>
-        <nav>
-            <a href="trangchu.html">Trang chủ</a>
-            <a href="gioithieu.html">Giới thiệu</a>
-            <a href="sanpham.html">Sản phẩm</a>
-            <a href="tintuc.html">Tin tức</a>
-            <a href="dangnhap.html">Đăng nhập</a>
-            <a href="dangky.html">Đăng ký</a>
-            <a href="lienhe.html">Liên hệ</a> 
+            <!--Thẻ nav-->
+            <nav>
+                <div class="nav-menu">
+                    <a href="trangchu.html">Trang chủ</a>
+                    <a href="gioithieu.html">Giới thiệu</a>
+                    <a href="sanpham.html">Sản phẩm</a>
+                    <a href="tintuc.html">Tin tức</a>
+                    <a href="dangnhap.html">Đăng nhập</a>
+                    <a href="dangky.html">Đăng ký</a>
+                    <a href="lienhe.html">Liên hệ</a>
+                </div>
+            <div class="nav-search">
+                <input type="text" placeholder="Nhập nội dung cần tìm...">
+                <button class="btn-search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="btn-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
         </nav>
+        </header>
         <main>
            <fieldset>
             <legend>
@@ -86,11 +101,15 @@
            </fieldset>
         </main>
         <footer>
-            &copy; 2021 Bản quyền thuộc về FreezeVN. 
-            <a href="facebook.com">facebook</a>
-            <a href="twitter.com">twitter</a>
-            <a href="pinterest.com">pinterest</a>
-            <a href="#logo">Về đầu trang</a>
+            &copy; 2021 Bản quyền thuộc về FreezeVN.
+
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+            
+            <a href="#logo" alt="" class="back-to-top"></a>
         </footer>
     </body>
 

@@ -122,7 +122,6 @@ footer {
 .back-to-top {
     right: 10px;
     bottom: 5px;
-    position: fixed;
     padding: 10px;
     background-color: #ed4190;
     z-index: 100;
@@ -131,6 +130,8 @@ footer {
     background-image: url('images/top.png');
     border-radius: 5%;
     background-size: contain;
+    position: fixed;
+
 }
 
 /*Bài tập 4*/
@@ -264,4 +265,161 @@ h3 {
     margin: 0 auto;
     height: auto;
     width: 50%;
+}
+
+/*Bố cục*/
+body {
+    display: grid;
+    grid-template-areas: "header-cell" "nav-cell" "main-cell" "footer-cell";
+    width: 1024px;
+    margin:auto;
+}
+
+header {
+    grid-area: header-cell;
+}
+
+nav {
+    grid-area: nav-cell;
+}
+
+main {
+    display: grid;
+    grid-area: main-cell;
+    border: 1px solid #ccc7c8;
+    border-radius: 5px;
+}
+
+footer {
+    grid-area: footer-cell;
+}
+
+.aleft {
+    grid-area: left-cell;
+    margin: 2px;
+    padding: 5px;
+    color: #000;
+    text-align:center;
+}
+
+.aright {
+    grid-area: right-cell;
+    margin: 2px;
+    padding: 5px;
+    color: #000;
+    text-align:center;
+}
+
+main.col1 {
+    grid-template-areas: 
+    "left-cell" 
+    "center-cell" 
+    "right-cell";
+}
+
+main aside.aleft {
+    grid-area: left-cell;
+}
+
+main article {
+    grid-area: center-cell;
+}
+
+main aside.aright {
+    grid-area: right-cell;
+}
+
+/*hai cột lệch phải và hai cột lệch trái*/
+main.col2-left {
+    grid-template-columns: 25% 75%;
+    grid-template-areas: "left-cell center-cell";
+}
+
+main.col2-left aside.aright{
+    display: none;
+}
+
+main.col2-right {
+    grid-template-columns: 75% 25%;
+    grid-template-areas: "center-cell right-cell";
+}
+
+main.col2-right aside.aleft{
+    display: none;
+}
+
+main aside img, main article img {
+    max-width:100%;
+    height:auto;
+}
+
+article h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 760px){
+    main.col2-left {
+        grid-template-columns: 1fr;
+        grid-template-areas: "center-cell" "left-cell" ;
+    }
+    main.col2-right {
+        grid-template-columns: 1fr;
+        grid-template-areas: "center-cell" "right-cell" ;
+    }
+}
+
+
+
+.main-sanpham section {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    color: #ed4190;
+    flex-wrap: wrap;
+}
+
+
+.main-sanpham .product-item {
+    display: flex;
+    margin: 3px;
+    border: 1px solid #dbd7d9;
+    padding: 0px;
+    color: #ed4190;
+    flex: 1 1 0;
+    flex-direction: column;
+    background: linear-gradient(to top, #cddc39 0%, transparent 10%);
+}
+
+
+.main-sanpham .product-item img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.main-sanpham .product-item h2 {
+    text-align: center;
+}
+
+
+.main-sanpham .product-item span {
+    display: block;
+    margin: 4px;
+    padding: 3px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 2;
+}
+
+.main-sanpham section h1 {
+    width: 100%;
+}
+
+.main-sanpham .product-item span label {
+    color: #000000;
 }
